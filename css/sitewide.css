@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins:wght@200&display=swap");
+
+* {
+  font-family: "Poppins", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1525px) {
+  body {
+    background: rgb(240, 253, 255);
+  }
+
+  .header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #a8d8d8;
+    padding: 2vh 4vh;
+    transition: 0.4s;
+    z-index: 999;
+  }
+
+  i.fa.fa-bars {
+    display: none;
+  }
+
+  i.fa.fa-times {
+    display: none;
+  }
+
+  input#check {
+    display: none;
+  }
+
+  /* Page Title */
+  header a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.4vh;
+  }
+
+  /* Nav Links */
+  header li a {
+    text-decoration: none;
+    color: black;
+    float: inline-end;
+    padding-left: 1.2em;
+    font-weight: 800;
+  }
+
+  header li {
+    list-style-type: none;
+    color: black;
+    display: inline;
+    font-size: 3em;
+  }
+
+  .sitename a {
+    display: block;
+  }
+
+  .scroll-text {
+    width: 100%;
+    font-size: 8vh;
+    text-align: center;
+    padding-bottom: 2vh;
+  }
+
+  .socials {
+    margin-top: 3vh;
+    width: 100%;
+    background-color: #eeeeee;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 2vh;
+    margin-bottom: 0;
+  }
+
+  .socials h1 {
+    width: 100%;
+    font-size: 3vh;
+    text-align: center;
+  }
+
+  .social-icon {
+    display: inline-block;
+    font-size: 5vh;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .social-icon a {
+    color: black;
+  }
+}
+
+/* Media With Burger Menu */
+
+@media (max-width: 1524px) {
+  body {
+    background: rgb(240, 253, 255);
+  }
+
+  .header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #a8d8d8;
+    padding: 3vh 2vh;
+    transition: 0.4s;
+    z-index: 999;
+  }
+
+  .scroll-text {
+    width: 100%;
+    font-size: 5vh;
+    text-align: center;
+    padding-bottom: 2vh;
+  }
+
+  .sitename a {
+    display: block;
+  }
+
+  .close-menu,
+  .open-menu {
+    top: 50%;
+    float: right;
+    padding: 15px 20px 0 0;
+    color: rgb(0, 0, 0);
+  }
+
+  .close-menu,
+  .open-menu:hover {
+    cursor: pointer;
+  }
+  input#check {
+    display: none;
+  }
+
+  header a {
+    text-decoration: none;
+    color: white;
+    text-shadow: black 1px 1px;
+    font-size: 2vh;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: rgb(75, 90, 138);
+    transition: all 0.4s ease-in-out;
+  }
+
+  .menu li {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .menu li a {
+    padding: 10px;
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+  }
+  #check:checked ~ .menu {
+    right: 0;
+  }
+
+  header li a {
+    text-decoration: none;
+    color: white;
+    padding-left: 1.2em;
+    font-weight: 800;
+  }
+
+  header li {
+    list-style-type: none;
+    color: white;
+    font-size: 1em;
+    padding: 3vw;
+  }
+
+  input#nav-check:checked + ul {
+    display: flex;
+  }
+
+  .socials {
+    margin-top: 3vh;
+    width: 100%;
+    background-color: #eeeeee;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 2vh;
+    margin-bottom: 0;
+  }
+
+  .socials h1 {
+    width: 100%;
+    font-size: 3vh;
+    text-align: center;
+  }
+
+  .social-icon {
+    display: inline-block;
+    font-size: 5vh;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .social-icon a {
+    color: black;
+  }
+}

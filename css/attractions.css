@@ -1,0 +1,106 @@
+.banner img {
+  width: 100%;
+  max-height: 40vh;
+  height: auto;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.scroll-text {
+  position: absolute;
+  justify-content: center;
+  color: white;
+  top: 25%;
+  font-size: 2vh;
+}
+
+.food-info {
+  width: 100%;
+  padding: 4vh;
+  background-color: burlywood;
+  font-size: 2vh;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+}
+
+.food-grid {
+  width: 80%;
+  margin-left: 10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 10vh;
+}
+
+.food-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px white solid;
+  grid-column: span 1fr;
+  background-image: url("../images/food.jpg");
+  background-size: 205%;
+  text-align: center;
+  color: white;
+  font-size: 2vh;
+  margin-top: 20%;
+
+  box-shadow: 1px 1px black;
+  height: 50vh;
+}
+
+.food-item h2 {
+  margin-top: 5vh;
+  font-size: 2vh;
+}
+
+.food-item p {
+  height: 20%;
+  margin-top: 3vh;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  font-size: 2vh;
+}
+
+.food-item:hover {
+  transition: 0.3s ease-in-out;
+  scale: 1.1;
+  cursor: pointer;
+}
+
+@media (max-width: 775px) {
+  .food-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+    margin-bottom: 10vh;
+  }
+
+  .food-item {
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    border: 1px white solid;
+    grid-column: span 1fr;
+    background-image: url("../images/food.jpg");
+    background-size: 305%;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    margin-top: 20%;
+  }
+}
+
+@media (max-width: 900px) {
+  .food-grid {
+    width: 80%;
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 10vh;
+  }
+}
